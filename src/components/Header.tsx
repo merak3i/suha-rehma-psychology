@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
+import { HoverGlowButton } from './ui/hover-glow-button'
 
 const CALENDLY_LINK = 'https://calendly.com/suha-rehma-therapy'
 
@@ -43,12 +44,9 @@ export default function Header() {
           >
             Insights
           </a>
-          <a
-            href={CALENDLY_LINK}
-            className="inline-flex items-center px-6 py-2.5 bg-slate-blue text-cream text-sm font-medium rounded-2xl hover:bg-slate-blue/90 transition-colors"
-          >
+          <HoverGlowButton href={CALENDLY_LINK} size="sm">
             Book Call
-          </a>
+          </HoverGlowButton>
         </div>
 
         {/* Mobile toggle */}
@@ -78,13 +76,13 @@ export default function Header() {
           >
             Insights
           </a>
-          <a
+          <HoverGlowButton
             href={CALENDLY_LINK}
+            size="sm"
             onClick={() => setMobileOpen(false)}
-            className="inline-flex items-center px-6 py-2.5 bg-slate-blue text-cream text-sm font-medium rounded-2xl"
           >
             Book Call
-          </a>
+          </HoverGlowButton>
         </div>
       )}
     </header>

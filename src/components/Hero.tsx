@@ -1,11 +1,12 @@
 import { BackgroundCircles } from './ui/background-circles'
+import { HoverGlowButton } from './ui/hover-glow-button'
 
 const CALENDLY_LINK = 'https://calendly.com/suha-rehma-therapy'
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen overflow-hidden bg-cream">
-      {/* Animated background circles — suppress internal text */}
+      {/* Animated background circles */}
       <div className="absolute inset-0 pointer-events-none">
         <BackgroundCircles
           title=""
@@ -32,12 +33,9 @@ export default function Hero() {
             Evidence-based tools for the modern mind.
           </p>
 
-          <a
-            href={CALENDLY_LINK}
-            className="inline-flex items-center px-8 py-3.5 bg-slate-blue text-cream font-medium rounded-2xl hover:bg-slate-blue/90 transition-all hover:shadow-lg hover:shadow-slate-blue/20"
-          >
+          <HoverGlowButton href={CALENDLY_LINK} size="xxl">
             Begin Here
-          </a>
+          </HoverGlowButton>
         </div>
       </div>
     </section>
