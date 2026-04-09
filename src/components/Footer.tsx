@@ -2,8 +2,9 @@ import { motion, useReducedMotion } from 'framer-motion'
 import { Linkedin, Instagram, ArrowRight } from 'lucide-react'
 import { HoverGlowButton } from './ui/hover-glow-button'
 import type { ReactNode } from 'react'
+import { CALENDLY_URL, LINKEDIN_URL, INSTAGRAM_URL, CRISIS_LINES } from '../config/constants'
 
-const CALENDLY_LINK = 'https://calendly.com/suha-rehma-therapy'
+const CALENDLY_LINK = CALENDLY_URL
 
 interface FooterLink {
   title: string
@@ -27,17 +28,13 @@ const footerLinks: FooterSection[] = [
   },
   {
     label: 'Resources',
-    links: [
-      { title: 'Vandrevala Foundation', href: 'tel:9999666555' },
-      { title: 'AASRA', href: 'tel:9820466726' },
-      { title: 'iCall', href: 'tel:9152987821' },
-    ],
+    links: CRISIS_LINES.map((l) => ({ title: l.name, href: l.tel })),
   },
   {
     label: 'Connect',
     links: [
-      { title: 'LinkedIn', href: 'https://www.linkedin.com/in/suha-rehma-/', icon: Linkedin },
-      { title: 'Instagram', href: 'https://www.instagram.com/suha.xrehma/', icon: Instagram },
+      { title: 'LinkedIn', href: LINKEDIN_URL, icon: Linkedin },
+      { title: 'Instagram', href: INSTAGRAM_URL, icon: Instagram },
     ],
   },
 ]

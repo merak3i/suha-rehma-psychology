@@ -1,6 +1,7 @@
 import { Clock, ArrowRight } from 'lucide-react'
+import { CALENDLY_URL } from '../config/constants'
 
-const CALENDLY_LINK = 'https://calendly.com/suha-rehma-therapy'
+const CALENDLY_LINK = CALENDLY_URL
 
 const services = [
   {

@@ -1,7 +1,8 @@
 import { BackgroundCircles } from './ui/background-circles'
 import { HoverGlowButton } from './ui/hover-glow-button'
+import { CALENDLY_URL } from '../config/constants'
 
-const CALENDLY_LINK = 'https://calendly.com/suha-rehma-therapy'
+const CALENDLY_LINK = CALENDLY_URL
 
 export default function Hero() {
   return (

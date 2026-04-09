@@ -1,10 +1,5 @@
 import { Phone } from 'lucide-react'
-
-const lines = [
-  { name: 'Vandrevala Foundation', number: '9999 666 555' },
-  { name: 'AASRA', number: '9820466726' },
-  { name: 'iCall', number: '9152987821' },
-]
+import { CRISIS_LINES } from '../config/constants'
 
 export default function CrisisCenter() {
   return (
@@ -24,10 +19,10 @@ export default function CrisisCenter() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6">
-            {lines.map((l) => (
+            {CRISIS_LINES.map((l) => (
               <a
                 key={l.name}
-                href={`tel:${l.number.replace(/\s/g, '')}`}
+                href={l.tel}
                 className="inline-flex items-center gap-2.5 bg-white/80 backdrop-blur-sm border border-slate-blue/10 rounded-2xl px-5 py-3 hover:shadow-md transition-all group"
               >
                 <Phone

@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { HoverGlowButton } from './ui/hover-glow-button'
+import { CALENDLY_URL } from '../config/constants'
 
-const CALENDLY_LINK = 'https://calendly.com/suha-rehma-therapy'
+const CALENDLY_LINK = CALENDLY_URL
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
