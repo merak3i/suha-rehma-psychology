@@ -83,7 +83,7 @@ export default function Writings() {
           <CircularGallery
             items={galleryItems}
             radius={380}
-            autoRotateSpeed={0.036}
+            autoRotateSpeed={0.108}
           />
         </div>
 
