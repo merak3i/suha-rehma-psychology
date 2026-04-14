@@ -13,8 +13,8 @@ export default function App() {
       <main>
         <Hero />
         <Services />
-        <Insights />
         <Writings />
+        <Insights />
         <CrisisCenter />
       </main>
       <Footer />
