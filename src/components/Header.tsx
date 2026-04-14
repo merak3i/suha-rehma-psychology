@@ -45,6 +45,12 @@ export default function Header() {
           >
             Insights
           </a>
+          <a
+            href="#writings"
+            className="text-sm text-slate-blue/70 hover:text-slate-blue transition-colors"
+          >
+            Writings
+          </a>
           <HoverGlowButton href={CALENDLY_LINK} size="sm">
             Book Call
           </HoverGlowButton>
@@ -76,6 +82,13 @@ export default function Header() {
             className="block text-sm text-slate-blue/70 hover:text-slate-blue"
           >
             Insights
+          </a>
+          <a
+            href="#writings"
+            onClick={() => setMobileOpen(false)}
+            className="block text-sm text-slate-blue/70 hover:text-slate-blue"
+          >
+            Writings
           </a>
           <HoverGlowButton
             href={CALENDLY_LINK}

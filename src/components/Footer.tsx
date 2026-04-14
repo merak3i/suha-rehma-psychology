@@ -1,8 +1,8 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import { Linkedin, Instagram, ArrowRight } from 'lucide-react'
+import { Linkedin, Instagram, ArrowRight, BookOpen } from 'lucide-react'
 import { HoverGlowButton } from './ui/hover-glow-button'
 import type { ReactNode } from 'react'
-import { CALENDLY_URL, LINKEDIN_URL, INSTAGRAM_URL, CRISIS_LINES } from '../config/constants'
+import { CALENDLY_URL, LINKEDIN_URL, INSTAGRAM_URL, CRISIS_LINES, SUBSTACK_URL } from '../config/constants'
 
 const CALENDLY_LINK = CALENDLY_URL
 
@@ -23,6 +23,7 @@ const footerLinks: FooterSection[] = [
     links: [
       { title: 'Services', href: '#services' },
       { title: 'Insights', href: '#insights' },
+      { title: 'Writings', href: '#writings' },
       { title: 'Book a Call', href: CALENDLY_LINK },
     ],
   },
@@ -35,6 +36,7 @@ const footerLinks: FooterSection[] = [
     links: [
       { title: 'LinkedIn', href: LINKEDIN_URL, icon: Linkedin },
       { title: 'Instagram', href: INSTAGRAM_URL, icon: Instagram },
+      { title: 'Substack', href: SUBSTACK_URL, icon: BookOpen },
     ],
   },
 ]

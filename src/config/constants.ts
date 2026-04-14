@@ -4,6 +4,7 @@ export const CALENDLY_URL = 'https://calendly.com/suha-rehma-therapy'
 // ─── Social ───────────────────────────────────────────────────────────────────
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/suha-rehma-/'
 export const INSTAGRAM_URL = 'https://www.instagram.com/suha.xrehma/'
+export const SUBSTACK_URL = 'https://neurodiversetherapist.substack.com'
 
 // ─── India Crisis Hotlines ────────────────────────────────────────────────────
 export const CRISIS_LINES = [
